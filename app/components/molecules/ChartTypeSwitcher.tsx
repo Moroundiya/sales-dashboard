@@ -8,7 +8,7 @@ type Props = {
 
 export default function ChartTypeSwitcher({ type, onChange }: Props) {
 	return (
-		<div style={{ display: "flex", gap: "8px" }}>
+		<div className="flex space-x-3">
 			<Button
 				active={type === "bar"}
 				onClick={() => onChange("bar")}>

@@ -31,14 +31,7 @@ export default function SalesChartSection({
 		.filter((d) => (threshold ? d.sales >= threshold : true));
 
 	return (
-		<div
-			style={{
-				background: "#fff",
-				padding: "16px",
-				borderRadius: "8px",
-				boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
-				marginTop: "16px",
-			}}>
+		<div className="bg-white p-4 rounded-md shadow-md mt-5">
 			<ResponsiveContainer
 				width="100%"
 				height={400}>
